@@ -155,13 +155,17 @@ button {
   gap: 12px;
   transition: all 0.25s;
   cursor: pointer;
-  height: 100%;
-  background-color: var(--clr-btn-primary);
+  background-color: var(--clr-btn-secondary);
   color: var(--clr-beige-secondary);
 
   &:focus,
   :focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  &:hover {
+    background-color: var(--clr-beige-secondary);
+    color: var(--clr-green);
   }
 }
 
@@ -182,8 +186,8 @@ button {
   gap: 12px;
   transition: all 0.25s;
   cursor: pointer;
-  height: 100%;
   background-color: var(--clr-btn-primary);
+  text-decoration: none;
 
   &:hover {
     background-color: var(--clr-beige-primary);
@@ -213,8 +217,8 @@ button {
   gap: 12px;
   transition: all 0.25s;
   cursor: pointer;
-  height: 100%;
   background-color: var(--clr-btn-primary);
+  text-decoration: none;
 
   &:hover {
     background-color: var(--clr-beige-primary);
@@ -240,11 +244,9 @@ button {
   gap: 12px;
   transition: all 0.25s;
   cursor: pointer;
-  height: 100%;
-  background-color: var(--clr-btn-primary);
-
-  background-color: var(--clr-beige-primary);
+  background-color: var(--clr-beige-secondary);
   color: var(--clr-green);
+  text-decoration: none;
 
   &:hover {
     background-color: var(--clr-green); 
@@ -267,7 +269,7 @@ button {
 h1 {
   line-height: 1.3;
   color: var(--clr-heading-primary);
-  font-weight: 800;
+  font-weight: 700;
 
   @media (min-width: 0px) {
     font-size: 26pt;
@@ -295,7 +297,7 @@ h1 {
 h2 {
   line-height: 1.3;
   color: var(--clr-heading-primary);
-  font-weight: 800;
+  font-weight: 700;
 
   @media (min-width: 0px) {
     font-size: 22pt;
@@ -430,4 +432,8 @@ li {
   @media (min-width: 1200px) {
     padding: 5rem 0;
   }
+}
+
+.above-the-fold {
+  
 }
